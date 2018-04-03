@@ -1,0 +1,15 @@
+.top-card .card-header {
+    background-image: url(../image/top_card_bg.jpg);
+    background-size: cover;
+    background-position-y: -370px;
+    color: white;
+	padding:5rem;
+}
+.top-card .card-header h1,.top-card .card-header h2{
+	display:inline;
+}
+
+.card-img-top{
+	width:auto;
+	height:200px;
+}
