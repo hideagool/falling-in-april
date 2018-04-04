@@ -8,6 +8,7 @@
 		<title>김영선의 포트폴리오 페이지 입니다.</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
 		<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-	wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
 		<link rel="stylesheet" href="css/index.css">
 	</head>
 	<body>
@@ -46,10 +47,10 @@
 							  <dt>버젼관리</dt><dd><a href="https://github.com/hideagool/falling-in-april">github</a></dd>
 							  <dt>자바스크립트 라이브러리</dt><dd>
 								<ul>
-									<li><a href="http://jquery.com/">jquey</a></li>
-									<li><a href="https://getbootstrap.com/">bootstrap</a></li>
-									<li><a href="https://fezvrasta.github.io/bootstrap-material-design">bootstrap-material-design</a></li>
-									<li><a href="https://kr.vuejs.org/">vue.js</a></li>
+									<li><a href="http://jquery.com/" target="_blank">jquey</a></li>
+									<li><a href="https://getbootstrap.com/" target="_blank">bootstrap</a></li>
+									<li><a href="https://fezvrasta.github.io/bootstrap-material-design" target="_blank">bootstrap-material-design</a></li>
+									<li><a href="https://kr.vuejs.org/" target="_blank">vue.js</a></li>
 								</ul>
 							  </dd>
 						</div>
@@ -59,69 +60,132 @@
 			
 			<div class="row">
 			  <div class="col-sm-7  mt-3">
-				<div class="card">
-					<div class="card-header"><h4>스냅비</h4></div>
+				<div class="card aniview" data-av-animation="slideInLeft">
+					<div class="card-header"><h4>스냅비<sup class="card-title">쇼핑몰 동영상 솔루션</sup></h4></div>
 					<div class="card-body">
 						<div class="text-center"><img class="card-img-top" src="image/snapvi.png" alt="Card image cap"></div>
-						<h5 class="card-title"></h5>
+						<div>
+							<span class="badge badge-primary">PHP7</span>
+							<span class="badge badge-primary">AWS</span>
+							<span class="badge badge-primary">CI</span>
+							<span class="badge badge-info">Less</span>
+						</div>
 						<p class="card-text"></p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
+						<a href="#" class="btn btn-outline-success active">자세히 보기</a>
+    					<a href="http://snapvi.co.kr/" target="_blank" class="btn btn-outline-success active">바로가기</a>
 					</div>
 				</div>
 			  </div>
 			  <div class="col-sm-5  mt-3">
-				<div class="card">
-					<div class="card-header"><h4>패션선생</h4></div>
+				<div class="card aniview" data-av-animation="slideInRight">
+					<div class="card-header"><h4>패션선생<sup class="card-title">쇼핑몰 모음 어플리케이션</sup></h4></div>
 					<div class="card-body">
 						<div class="text-center"><img class="card-img-top" src="image/stapp.png" alt="Card image cap"></div>
-						<h5 class="card-title"></h5>
+						<div>
+							<span class="badge badge-primary">PHP7</span>
+							<span class="badge badge-primary">API</span>
+							<span class="badge badge-primary">CI</span>
+							<span class="badge badge-dark">solr</span>
+						</div>
 						<p class="card-text"></p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
+						<a href="#" class="btn btn-outline-success active">자세히 보기</a>
+    					<a href="https://play.google.com/store/apps/details?id=com.intopad.ohcoordi" target="_blank" class="btn btn-outline-success active">바로가기</a>
 					</div>
 				</div>
 			  </div>
 				<div class="col-sm-4  mt-3">
-					<div class="card">
-						<div class="card-header"><h4>모두하이</h4></div>
+					<div class="card aniview" data-av-animation="slideInUp">
+						<div class="card-header"><h4>모두하이<sup class="card-title">단체를 위한 포탈사이트</sup></h4></div>
 						<div class="card-body">
 							<div class="text-center"><img class="card-img-top" src="image/modoohi.png" alt="Card image cap"></div>
-							<h5 class="card-title"></h5>
+							<div>
+								<span class="badge badge-primary">PHP</span>
+								<span class="badge badge-info">HTML5</span>
+								<span class="badge badge-info">CSS3</span>
+							</div>
 							<p class="card-text"></p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<a href="#" class="btn btn-outline-success active">자세히 보기</a>
+    						<a href="http://www.modoohi.com" target="_blank" class="btn btn-outline-success active">바로가기</a>
 						</div>
 					</div>
 			  	</div>
 				<div class="col-sm-4  mt-3">
-					<div class="card">
-						<div class="card-header"><h4>실버하이</h4></div>
+					<div class="card aniview" data-av-animation="fadeIn">
+						<div class="card-header"><h4>실버하이<sup class="card-title">노인 요양을 위한 포탈사이트</sup></h4></div>
 						<div class="card-body">
 							<div class="text-center"><img class="card-img-top" src="image/silverhi.png" alt="Card image cap"></div>
-							<h5 class="card-title"></h5>
+							<div>
+								<span class="badge badge-primary">PHP</span>
+								<span class="badge badge-info">HTML5</span>
+								<span class="badge badge-info">CSS3</span>
+							</div>
 							<p class="card-text"></p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<a href="#" class="btn btn-outline-success active">자세히 보기</a>
+    						<a href="http://www.silverhi.com" target="_blank" class="btn btn-outline-success active">바로가기</a>
 						</div>
 					</div>
 			  	</div>
 				<div class="col-sm-4  mt-3">
-					<div class="card">
-						<div class="card-header"><h4>메디하이</h4></div>
+					<div class="card aniview" data-av-animation="slideInDown">
+						<div class="card-header"><h4>메디하이<sup class="card-title">병원 및 약국을 쉽게 찾기위한 사이트</sup></h4></div>
 						<div class="card-body">
 							<div class="text-center"><img class="card-img-top" src="image/medihi.png" alt="Card image cap"></div>
-							<h5 class="card-title"></h5>
+							<div>
+								<span class="badge badge-primary">PHP</span>
+								<span class="badge badge-info">HTML5</span>
+								<span class="badge badge-info">CSS3</span>
+								<span class="badge badge-dark">WebApp</span>
+							</div>
 							<p class="card-text"></p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<a href="#" class="btn btn-outline-success active">자세히 보기</a>
+    						<a href="http://medihi.co.kr" target="_blank" class="btn btn-outline-success active">바로가기</a>
+						</div>
+					</div>
+			  	</div>
+				<div class="col-sm-12  mt-3">
+					<div class="card aniview" data-av-animation="slideInUp">
+						<div class="card-header"><h4>커밋<sup class="card-title">SNS기반의 채용사이트</sup></h4></div>
+						<div class="card-body">
+							<div class="text-center">
+								<img class="card-img-top" src="image/commeet.png" alt="Card image cap">
+								<img class="card-img-top" src="image/commeet2.png" alt="Card image cap">
+								<img class="card-img-top" src="image/commeet3.png" alt="Card image cap">
+							</div>
+							<div>
+								<span class="badge badge-primary">PHP</span>
+								<span class="badge badge-primary">CI</span>
+								<span class="badge badge-primary">Rewrite Rule</span>
+								<span class="badge badge-dark">SNS</span>
+							</div>
+							<p class="card-text"></p>
+							<a href="#" class="btn btn-outline-success active">자세히 보기</a>
+    						<a href="http://commeet.me" target="_blank" class="btn btn-outline-success active">바로가기</a>
 						</div>
 					</div>
 			  	</div>
 			</div>
-			
 		</div>
+			
+		<footer id="footer" class="mt-5">
+			Copyright (C) 2018 Kim Young-Sun All Right Reserved
+		</footer>
+			
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-		<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+		<script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+		
+		<script>$(document).ready(function() { 
+			$('body').bootstrapMaterialDesign(); 
+				var options = {
+					animateThreshold: 300,
+					scrollPollInterval: 20
+				}
+				$('.aniview').AniView(options);
+		});
+		</script>
   </body>
 </html>
