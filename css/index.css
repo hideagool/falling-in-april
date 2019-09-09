@@ -1,6 +1,9 @@
 *{
 	color:whitesmoke;
 }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+	word-break: keep-all;
+}
 body{
 	color:whitesmoke;
 	background: black;
@@ -9,10 +12,11 @@ body{
 .container-fluid{
 	padding:0px;
 }
-pre{
+p{
+	word-break: break-all;
+	white-space: pre-wrap;
 	color:whitesmoke;
 }
-
 .row{
 	margin:30px 0px;
 }
@@ -26,7 +30,10 @@ pre{
 }
 
 
-
+.parallax-window {
+	min-height: 400px;
+	background: transparent;
+}
 
 
 
