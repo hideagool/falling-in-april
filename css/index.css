@@ -4,9 +4,12 @@
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
 	word-break: keep-all;
 }
+h1{
+	font-size: 3rem;
+}
 body{
 	color:whitesmoke;
-	background: black;
+	background: linear-gradient(90deg, rgba(116,116,116,1) 0%, rgba(0,0,0,1) 100%);
 	padding-top:20px;
 }
 .container-fluid{
@@ -16,6 +19,7 @@ p{
 	word-break: break-all;
 	white-space: pre-wrap;
 	color:whitesmoke;
+	font-size: 1.5rem;
 }
 div{
 	word-break: keep-all;
@@ -43,7 +47,13 @@ div{
 	-webkit-background-clip: text;
 	color: transparent !important;
 }
-
+.big-data-desc{
+	background: #000119db;
+	border-radius: 20px;
+}
+.big-data-title{
+	text-shadow: 3px 0 10px #000000, 0 3px 10px #000000, 3px 0 10px #000000, 0 -3px 10px #000000;
+}
 
 
 /*@media (min-width: 576px) {*/
