@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-	wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css">
 		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/timeline.css">
 	</head>
 	<body>
 
@@ -20,6 +21,30 @@
 		<!--<div class="row">
 			<div class="col-sm-12 text-center wide thumb-img"><img src="image/code.jpg" width="100%"></div>
 		</div>-->
+
+		<div class="row profile">
+			<div class="col-md-3 offset-md-3">
+				<h5 class="card-title">프로필 <img src="image/profile.jpg" width="50px" class="rounded-circle"></h5>
+				<dt>생년월일</dt><dd>1985년 7월 22일</dd>
+				<dt>성별</dt><dd>남</dd>
+				<dt>E-mail</dt><dd>deagool@gmail.com</dd>
+			</div>
+			<div class="col-md-6">
+				<dt>대표 사용가능 기술</dt>
+				<dd>
+					<ul class="list-group bmd-list-group-sm">
+						<a href="http://jquery.com/" target="_blank" class="text-info list-group-item">PHP</a>
+						<a href="http://jquery.com/" target="_blank" class="text-info list-group-item">codeigniter</a>
+						<a href="https://getbootstrap.com/" target="_blank" class="text-info list-group-item">Node.js</a>
+						<a href="https://fezvrasta.github.io/bootstrap-material-design" target="_blank" class="text-info list-group-item">HTML5</a>
+						<a href="https://kr.vuejs.org/" target="_blank" class="text-info list-group-item">CSS3</a>
+						<a href="https://kr.vuejs.org/" target="_blank" class="text-info list-group-item">javascript / ECMA6</a>
+					</ul>
+				</dd>
+			</div>
+		</div>
+
+
 		<div class="row parallax-window" data-100-start ="background-image:url(image/code.jpg);background-size: cover;background-repeat: no-repeat; background-position-y: 0px;" data-end ="background-image:url(image/code.jpg);background-size: cover;background-repeat: no-repeat; background-position-y: -4000px;" >
 			<div class="col-sm-12 text-center">
 				<h1 class="display-2">풀스택 개발자<sub>Full Stack Developer</sub></h1>
@@ -55,153 +80,201 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<h1 class="display-2"> 지금까지의 대표 프로젝트</h1>
-			</div>
-		</div>
 
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<h1 class="display-2">스냅푸시<sub>Snap push</sub></h1>
-				<p>쇼핑몰 내&middot;외부로 특정 쿠폰 및 상품추천과 알림 메세지를 전송하는 솔루션 입니다.</p>
-			</div>
-            <div class="col-md-3 text-left"><img src="image/snappush_banner.jpg" width="100%"></div>
-			<div class="col-md-9">
-                <p>관리자에서 설정한 조건에 맞는 유저에게 쇼핑몰 내에서 팝업을 띄워주거나
-SMS와 카카오톡 등의 알림을 보내주는 서비스 입니다.
+		<section id=timeline>
+			<h1>지금까지의 대표 프로젝트</h1>
+			<p class="leader">최근에 했던 중요 프로젝트의 설명과 사용 기술입니다.</p>
+			<div class="demo-card-wrapper">
+				<div class="demo-card demo-card--step1">
+					<div class="head">
+						<div class="number-box">
+							<span>01</span>
+						</div>
+						<h2><span class="small">Snap push</span>스냅푸시 </h2>
+
+					</div>
+					<div class="body">
+						<p>쇼핑몰 내&middot;외부로 특정 쿠폰 및 상품추천과 알림 메세지를 전송하는 솔루션 입니다.</p>
+						<img src="image/snappush_banner.png" alt="Graphic">
+						<p>관리자에서 설정한 조건에 맞는 유저에게 쇼핑몰 내에서 팝업을 띄워주거나 SMS와 카카오톡 등의 알림을 보내주는 서비스 입니다.
 방문자수가 많은 쇼핑몰을 대상으로 하였기 때문에 대량의 데이터 처리에 대한 이슈가 많았던 프로젝트 였습니다.
 
 또한 외부 채널을 사용한 알림발송은 스케줄링을 해야하였기 때문에 그 부분에 대한 처리또한 해줘야 했었습니다.
 오토스케일링을 통한 분산처리와 DB분리 작업등을 통해 대량의 데이터 이슈를 해결하였던 프로젝트 였습니다.
 많은 문제와 어려움이 있었지만 배움도 많았던 프로젝트 입니다.</p>
+
+						<div class="col-md-12">
+							<div>
+								<span class="badge badge-pill badge-primary">Apache2</span>
+								<span class="badge badge-pill badge-secondary">Mod Security</span>
+								<span class="badge badge-pill badge-secondary">Mod Rewrite</span>
+							</div>
+							<div>
+								<span class="badge badge-pill badge-primary">PHP7</span>
+								<span class="badge badge-pill badge-secondary">Composer</span>
+								<span class="badge badge-pill badge-secondary">Code Igniter</span>
+							</div>
+							<div>
+								<span class="badge badge-pill badge-primary">Ubuntu</span>
+								<span class="badge badge-pill badge-secondary">Crontab</span>
+								<span class="badge badge-pill badge-secondary">Rsync</span>
+								<span class="badge badge-pill badge-secondary">Fluentd</span>
+							</div>
+							<div>
+								<span class="badge badge-pill badge-primary">AWS</span>
+								<span class="badge badge-pill badge-secondary">AWS-CLI</span>
+								<span class="badge badge-pill badge-secondary">S3</span>
+								<span class="badge badge-pill badge-secondary">RDS</span>
+								<span class="badge badge-pill badge-secondary">EC-2</span>
+								<span class="badge badge-pill badge-secondary">ELB</span>
+								<span class="badge badge-pill badge-secondary">EC-2 Auto Scaling</span>
+								<span class="badge badge-pill badge-secondary">SES</span>
+								<span class="badge badge-pill badge-secondary">Route 53</span>
+							</div>
+							<!--<div>-->
+							<!--<span class="badge badge-pill badge-dark">할말은 많지만...</span>-->
+							<!--</div>-->
+						</div>
+					</div>
+				</div>
+
+				<div class="demo-card demo-card--step2">
+					<div class="head">
+						<div class="number-box">
+							<span>02</span>
+						</div>
+						<h2><span class="small">Snapvi</span> 스냅비</h2>
+					</div>
+					<div class="body">
+<p>어플로 촬영한 동영상을 사이트에 자동으로 넣어주는 솔루션 입니다.
+쇼핑몰에 설치만 하면 자동으로 버튼과 영상이 붙도록 작업을 하였습니다.
+쇼핑몰에 최대한 영향을 주지 않는 스크립트 작업을 해야 하였기때문에 프론트 스크립트에 관하여 많이 배울수 있었던 프로젝트 였습니다.
+또한 AWS 서비스를 제대로 사용하기 시작한 프로젝트 이기도 합니다.</p>
+						<img src="image/snapvi.png" alt="Graphic">
+						<div class="col-md-12">
+							<div>
+								<span class="badge badge-pill badge-primary">Apache2</span>
+								<span class="badge badge-pill badge-secondary">Mod Security</span>
+								<span class="badge badge-pill badge-secondary">Mod Rewrite</span>
+							</div>
+							<div>
+								<span class="badge badge-pill badge-primary">PHP7</span>
+								<span class="badge badge-pill badge-secondary">Composer</span>
+								<span class="badge badge-pill badge-secondary">Code Igniter</span>
+							</div>
+							<div>
+								<span class="badge badge-pill badge-primary">Ubuntu</span>
+								<span class="badge badge-pill badge-secondary">Rsync</span>
+							</div>
+							<div>
+								<span class="badge badge-pill badge-primary">AWS</span>
+								<span class="badge badge-pill badge-secondary">S3</span>
+								<span class="badge badge-pill badge-secondary">RDS</span>
+								<span class="badge badge-pill badge-secondary">EC-2</span>
+								<span class="badge badge-pill badge-secondary">ELB</span>
+								<span class="badge badge-pill badge-secondary">Route 53</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="demo-card demo-card--step3">
+					<div class="head">
+						<div class="number-box">
+							<span>03</span>
+						</div>
+						<h2><span class="small">Fashion Teacher</span> 패션선생</h2>
+					</div>
+					<div class="body">
+						<p>패션선생 설명</p>
+						<img src="image/stapp.png" alt="Graphic">
+						<div class="col-md-12">
+							<div>
+								<span class="badge badge-pill badge-primary">Apache2</span>
+								<span class="badge badge-pill badge-secondary">Mod Security</span>
+								<span class="badge badge-pill badge-secondary">Mod Rewrite</span>
+							</div>
+							<div>
+								<span class="badge badge-pill badge-primary">PHP7</span>
+								<span class="badge badge-pill badge-secondary">Composer</span>
+								<span class="badge badge-pill badge-secondary">Code Igniter</span>
+							</div>
+							<div>
+								<span class="badge badge-pill badge-primary">AWS</span>
+								<span class="badge badge-pill badge-secondary">S3</span>
+								<span class="badge badge-pill badge-secondary">RDS</span>
+								<span class="badge badge-pill badge-secondary">EC-2</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="demo-card demo-card--step4">
+					<div class="head">
+						<div class="number-box">
+							<span>04</span>
+						</div>
+						<h2><span class="small">Modoohi</span> 모두하이</h2>
+					</div>
+					<div class="body">
+						<p>모두하이 설명</p>
+						<img src="image/modoohi.png" alt="Graphic">
+						<div class="col-md-12">
+							<div>
+								<span class="badge badge-pill badge-primary">Apache2</span>
+								<span class="badge badge-pill badge-secondary">Mod Security</span>
+								<span class="badge badge-pill badge-secondary">Mod Rewrite</span>
+							</div>
+							<div>
+								<span class="badge badge-pill badge-primary">PHP7</span>
+								<span class="badge badge-pill badge-secondary">Composer</span>
+								<span class="badge badge-pill badge-secondary">Code Igniter</span>
+							</div>
+							<div>
+								<span class="badge badge-pill badge-primary">AWS</span>
+								<span class="badge badge-pill badge-secondary">S3</span>
+								<span class="badge badge-pill badge-secondary">RDS</span>
+								<span class="badge badge-pill badge-secondary">EC-2</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="demo-card demo-card--step5">
+					<div class="head">
+						<div class="number-box">
+							<span>05</span>
+						</div>
+						<h2><span class="small">Subtitle</span> Conversion</h2>
+					</div>
+					<div class="body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+						<img src="http://placehold.it/1000x500" alt="Graphic">
+					</div>
+				</div>
+
 			</div>
-            <div class="col-md-9 offset-md-3 text-left">
-                <div>
-                    <span class="badge badge-pill badge-primary">Apache2</span>
-                    <span class="badge badge-pill badge-secondary">Mod Security</span>
-                    <span class="badge badge-pill badge-secondary">Mod Rewrite</span>
-                </div>
-                <div>
-                    <span class="badge badge-pill badge-primary">PHP7</span>
-                    <span class="badge badge-pill badge-secondary">Composer</span>
-                    <span class="badge badge-pill badge-secondary">Code Igniter</span>
-                </div>
-                <div>
-                    <span class="badge badge-pill badge-primary">Ubuntu</span>
-                    <span class="badge badge-pill badge-secondary">Crontab</span>
-                    <span class="badge badge-pill badge-secondary">Rsync</span>
-                    <span class="badge badge-pill badge-secondary">Fluentd</span>
-                </div>
-                <div>
-                    <span class="badge badge-pill badge-primary">AWS</span>
-                    <span class="badge badge-pill badge-secondary">AWS-CLI</span>
-                    <span class="badge badge-pill badge-secondary">S3</span>
-                    <span class="badge badge-pill badge-secondary">RDS</span>
-                    <span class="badge badge-pill badge-secondary">EC-2</span>
-                    <span class="badge badge-pill badge-secondary">ELB</span>
-                    <span class="badge badge-pill badge-secondary">EC-2 Auto Scaling</span>
-                    <span class="badge badge-pill badge-secondary">SES</span>
-                    <span class="badge badge-pill badge-secondary">Route 53</span>
-                </div>
-                <div>
-                    <span class="badge badge-pill badge-dark">할말은 많지만...</span>
-                </div>
-            </div>
+		</section>
+
+
+
+
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h1 class="display-2">개선 및 문제 해결 사례</h1>
+			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<h1 class="display-2">스냅비<sub>Snapvi</sub></h1>
-				<p>쇼핑몰 동영상 솔루션</p>
+				<h1 class="display-2">문제</h1>
+				<p>문제</p>
 			</div>
-			<div class="col-sm-3 text-left"><img src="image/snapvi.png" width="100%"></div>
-			<div class="col-sm-9">
-				<p>스냅비 설명</p>
-			</div>
-			<div class="col-sm-9 offset-sm-3 text-left">
-				<div>
-					<span class="badge badge-pill badge-primary">Apache2</span>
-					<span class="badge badge-pill badge-secondary">Mod Security</span>
-					<span class="badge badge-pill badge-secondary">Mod Rewrite</span>
-				</div>
-				<div>
-					<span class="badge badge-pill badge-primary">PHP7</span>
-					<span class="badge badge-pill badge-secondary">Composer</span>
-					<span class="badge badge-pill badge-secondary">Code Igniter</span>
-				</div>
-				<div>
-					<span class="badge badge-pill badge-primary">Ubuntu</span>
-					<span class="badge badge-pill badge-secondary">Rsync</span>
-				</div>
-				<div>
-					<span class="badge badge-pill badge-primary">AWS</span>
-					<span class="badge badge-pill badge-secondary">S3</span>
-					<span class="badge badge-pill badge-secondary">RDS</span>
-					<span class="badge badge-pill badge-secondary">EC-2</span>
-					<span class="badge badge-pill badge-secondary">ELB</span>
-					<span class="badge badge-pill badge-secondary">Route 53</span>
-				</div>
+			<div class="col-md-12">
+			<p>해결</p>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<h1 class="display-2">패션선생<sub>Fashion Teacher</sub></h1>
-				<p>쇼핑몰 모음 어플리케이션</p>
-			</div>
-			<div class="col-sm-3 text-left"><img src="image/stapp.png" width="100%"></div>
-			<div class="col-sm-9">
-				<p>패션선생 설명</p>
-			</div>
-			<div class="col-sm-9 offset-sm-3 text-left">
-				<div>
-					<span class="badge badge-pill badge-primary">Apache2</span>
-					<span class="badge badge-pill badge-secondary">Mod Security</span>
-					<span class="badge badge-pill badge-secondary">Mod Rewrite</span>
-				</div>
-				<div>
-					<span class="badge badge-pill badge-primary">PHP7</span>
-					<span class="badge badge-pill badge-secondary">Composer</span>
-					<span class="badge badge-pill badge-secondary">Code Igniter</span>
-				</div>
-				<div>
-					<span class="badge badge-pill badge-primary">AWS</span>
-					<span class="badge badge-pill badge-secondary">S3</span>
-					<span class="badge badge-pill badge-secondary">RDS</span>
-					<span class="badge badge-pill badge-secondary">EC-2</span>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<h1 class="display-2">모두하이<sub>Modoohi</sub></h1>
-				<p>단체를 위한 포탈사이트</p>
-			</div>
-			<div class="col-sm-3 text-left"><img src="image/modoohi.png" width="100%"></div>
-			<div class="col-sm-9">
-				<p>모두하이 설명</p>
-			</div>
-			<div class="col-sm-9 offset-sm-3 text-left">
-				<div>
-					<span class="badge badge-pill badge-primary">Apache2</span>
-					<span class="badge badge-pill badge-secondary">Mod Security</span>
-					<span class="badge badge-pill badge-secondary">Mod Rewrite</span>
-				</div>
-				<div>
-					<span class="badge badge-pill badge-primary">PHP7</span>
-					<span class="badge badge-pill badge-secondary">Composer</span>
-					<span class="badge badge-pill badge-secondary">Code Igniter</span>
-				</div>
-				<div>
-					<span class="badge badge-pill badge-primary">AWS</span>
-					<span class="badge badge-pill badge-secondary">S3</span>
-					<span class="badge badge-pill badge-secondary">RDS</span>
-					<span class="badge badge-pill badge-secondary">EC-2</span>
-				</div>
-			</div>
-		</div>
 	</div>
     <!--div class="container-fluid">
         <div class="row mt-3">
@@ -395,7 +468,7 @@ SMS와 카카오톡 등의 알림을 보내주는 서비스 입니다.
     </div-->
 			
 		<footer id="footer" class="mt-5">
-			Copyright (C) 2018 Kim Young-Sun All Right Reserved
+			Copyright (C) 2019 Kim Young-Sun All Right Reserved
 		</footer>
 			
 		<!-- Optional JavaScript -->
