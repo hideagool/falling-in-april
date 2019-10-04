@@ -23,25 +23,44 @@
     order: 1;
 }
 
-.demo-card:nth-child(2) {
-    order: 4;
-}
-
 .demo-card:nth-child(3) {
     order: 2;
-}
-
-.demo-card:nth-child(4) {
-    order: 5;
 }
 
 .demo-card:nth-child(5) {
     order: 3;
 }
 
-.demo-card:nth-child(6) {
+.demo-card:nth-child(7) {
+    order: 4;
+}
+
+.demo-card:nth-child(9) {
+    order: 5;
+}
+
+.demo-card:nth-child(2) {
     order: 6;
 }
+
+.demo-card:nth-child(4) {
+    order: 7;
+}
+
+.demo-card:nth-child(6) {
+    order: 8;
+}
+
+.demo-card:nth-child(8) {
+    order: 9;
+}
+
+.demo-card:nth-child(10) {
+    order: 10;
+}
+
+
+
 
 /* Border Box */
 * {
@@ -79,7 +98,7 @@ body {
         display: flex;
         flex-flow: column wrap;
         width: 1170px;
-        height: 2800px;
+        height: 4200px;
         margin: 0 auto;
     }
 }
@@ -117,14 +136,14 @@ body {
 }
 @media (min-width: 1000px) {
     #timeline .demo-card {
-        max-width: 400px;
+        max-width: 450px;
         height: 735px;
         margin: 90px;
         margin-top: 45px;
         margin-bottom: 45px;
     }
     #timeline .demo-card:nth-child(odd) {
-        margin-right: 45px;
+        margin-right: 30px;
     }
     #timeline .demo-card:nth-child(odd) .head::after {
         border-left-width: 15px;
@@ -143,7 +162,7 @@ body {
         right: 100%;
     }
     #timeline .demo-card:nth-child(even) .head::before {
-        right: 440.5px;
+        right: 483.5px;
     }
     #timeline .demo-card:nth-child(2) {
         margin-top: 180px;
@@ -242,4 +261,28 @@ body {
 }
 #timeline .demo-card--step5 .head::after {
     border-color: #46b8e9;
+}
+#timeline .demo-card--step6 {
+    background-color: #36b32e;
+}
+#timeline .demo-card--step6 .head::after {
+    border-color: #36b32e;
+}
+#timeline .demo-card--step7 {
+    background-color: #b33917;
+}
+#timeline .demo-card--step7 .head::after {
+    border-color: #b33917;
+}
+#timeline .demo-card--step8 {
+    background-color: #b0b537;
+}
+#timeline .demo-card--step8 .head::after {
+    border-color: #b0b537;
+}
+#timeline .demo-card--step9 {
+    background-color: #a5a8a4;
+}
+#timeline .demo-card--step9 .head::after {
+    border-color: #a5a8a4;
 }

@@ -17,7 +17,6 @@ body{
 	padding:0px;
 }
 p{
-	word-break: break-all;
 	white-space: pre-wrap;
 	color:whitesmoke;
 	font-size: 1.5rem;
@@ -26,9 +25,16 @@ div{
 	word-break: keep-all;
 	color:whitesmoke;
 }
+
+.display-1, .display-2 {
+	font-weight: bolder;
+}
 .row{
 	margin:300px 0px;
 	padding: 50px 0px;
+}
+.row p{
+    font-weight: bolder;
 }
 .profile{
 	margin: 100px 0px -200px 0px;
@@ -62,8 +68,19 @@ div{
 }
 
 
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2303a9f4' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
 
-
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2303a9f4' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-indicators li{
+    background-color: #212529;
+}
+.carousel-indicators .active{
+    background-color: #03a9f4;
+}
 
 @media (min-width: 1200px) {
 	.big-data-desc{
